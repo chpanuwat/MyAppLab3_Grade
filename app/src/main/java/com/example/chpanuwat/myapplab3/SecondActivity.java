@@ -9,6 +9,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
@@ -26,6 +27,7 @@ public class SecondActivity extends AppCompatActivity {
         String name = intent.getStringExtra("yourName");
         String Email = intent.getStringExtra("Email");
         String Address = intent.getStringExtra("Address");
+        String Spinner = intent.getStringExtra("Spinner");
 
         TextView textView = (TextView) findViewById(R.id.textView3);
         textView.setText(id);
@@ -38,6 +40,10 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView textView11 = (TextView) findViewById(R.id.textView11);
         textView11.setText(Address);
+
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setText(Spinner);
     }
+
 
 }
